@@ -1,7 +1,19 @@
 nav{
-    height: 80px;
+    height: 70px;
     width: 100%;
     background-color: #001064;
     margin-bottom: 30px;
+}
+
+nav img{
+	width: 100px;
+	height: 70px; 
+}
+
+nav ul{
+	display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
 }
 
