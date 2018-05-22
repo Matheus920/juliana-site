@@ -1,8 +1,14 @@
+body{
+    margin: 0;
+}
+
+
 nav{
     height: 70px;
     width: 100%;
     background-color: #001064;
     margin-bottom: 30px;
+    
 }
 
 nav img{
@@ -15,5 +21,6 @@ nav ul{
     justify-content: center;
     position: relative;
     margin: 0;
+    padding: 0;
 }
 

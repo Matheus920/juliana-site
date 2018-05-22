@@ -1,12 +1,16 @@
-#conteudo{
+.conteudo-centralizado{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#conteudo h1{
+.conteudo-centralizado h1{
     text-transform: uppercase;
+}
+
+#nome-id{
+    width: 175px;
 }
 
 #form-center{
@@ -18,7 +22,7 @@
 }
 
 #form-center p{
-    width: inherit;
+    width: 100%;
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -35,4 +39,10 @@
 
 #center-buttons input{
     margin-right: 10px;
+}
+
+@media screen and (max-width: 596px){
+    #form-center{
+        width: 300px;
+    }
 }
