@@ -18,7 +18,7 @@
     max-height: 15px; 
 }
 
-.googleMaps{
-    width: 40%;
-
+.googleMap{
+    width: 400px;
+    height: 400px;
 }

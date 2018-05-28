@@ -17,34 +17,59 @@
     </header>
 
     <section class="conteudo-centralizado">
-        <div class="lugar">
+
+        <div  class="lugar">
             <h2>Melbourne - Australia <img class="bandeira" src="assets/img/australia-bandeira.png"></h2>
             <img src="assets/img/melbourne.jpg">
+
+             <div id="melbourneMap" class="googleMap"></div>
+
+            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAokWZqw3nwUV836swOhAF-M8xJggPp9ig&callback=myMap"></script>
        </div>
+
         <div class="lugar">
             <h2>Amsterdã - Holanda <img class="bandeira" src="assets/img/holanda-bandeira.png"></h2>
             <img src="assets/img/amsterda.jpg">
+
+             <div id="amsterdaMap" class="googleMap"></div>
+
+            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAokWZqw3nwUV836swOhAF-M8xJggPp9ig&callback=myMap"></script>
         </div>
+
         <div class="lugar">
             <h2>Oslo - Noruega <img class="bandeira" src="assets/img/noruega-bandeira.png"></h2>
-            <img src="assets/img/oslo.jpg">
+            <img src="assets/img/oslo.jpg"> 
+
+             <div id="osloMap" class="googleMap"></div>
+
+            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAokWZqw3nwUV836swOhAF-M8xJggPp9ig&callback=myMap"></script>
         </div>
+
+
         <div class="lugar">
             <h2>Vancouver - Canadá <img class="bandeira" src="assets/img/canada-bandeira.png"></h2>
             <img src="assets/img/vancouver.jpg">
+        
+        <div id="container">
+            <div id="vancouverMap" class="googleMap"></div>
+            <p>Teste test teste teste teste teste teste teste </p>
+        </div> 
+ 
+        <script>
+            function myMap(id, coord1, coord2) { 
+                    var mapProp= {center:new google.maps.LatLng(coord1, coord2),zoom:16};
+                    var map=new google.maps.Map(document.getElementById(id),mapProp);
+                    
+            }
+            myMap('osloMap', 59.913775, 10.737478);
+            myMap('vancouverMap', 49.244358, -123.046798);
+            myMap('amsterdaMap', 52.375962, 4.895818);
+            myMap('melbourneMap', -37.864508, 144.968250);
+        </script>
 
-            <div class="googleMap"></div>
-
-            <script>
-                function myMap() {
-                var mapProp={center:new google.maps.LatLng(49.244358, -123.046798), zoom:16};
-                var map=new google.maps.Map(document.getElementsByClassName("googleMap"),mapProp);
-                }
-            </script>
-
-            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCTe6GYEXugxLhDC2qDKs0dyoOpMtV1WNo&callback=myMap"></script>
-
-            </div>
+        <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAokWZqw3nwUV836swOhAF-M8xJggPp9ig&callback=myMap"></script>
+            
     </section>
 </body>
 </html>
+
