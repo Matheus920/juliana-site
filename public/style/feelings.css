@@ -12,3 +12,7 @@ table{
 	min-width: 200px;
 	margin-top: 30px;
 }
+
+.img-sentimentos:hover{
+	transform: scale(1.3);
+}
