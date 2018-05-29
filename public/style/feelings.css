@@ -1,10 +1,12 @@
 .img-sentimentos{
 	max-width: 60%;
 	min-width: 90px;
+	box-shadow: 15px 7px 5px grey;
 }
 
 td, td p{
 	text-align: center;
+	font: status-bar;
 }
 
 table{
@@ -14,5 +16,11 @@ table{
 }
 
 .img-sentimentos:hover{
-	transform: scale(1.3);
+	transform: scale(1.2);
+}
+
+@media screen and (max-width: 596px){
+	.img-sentimentos:hover{
+		margin-right: 25px;
+	}
 }
