@@ -7,6 +7,7 @@
 
 .conteudo-centralizado h1{
     text-transform: uppercase;
+    margin-top: 50px;
 }
 
 #nome-id{
@@ -18,11 +19,13 @@
     width: 554px;
     display: flex;
     align-items: center;
-    flex-flow: row wrap;    
+    flex-flow: row wrap; 
 }
 
 #form-center p{
     width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -33,12 +36,12 @@
     align-items: center;
     justify-content: center;
     width: inherit;
-
     margin-top: 30px;
 }
 
 #center-buttons input{
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 596px){

@@ -1,12 +1,20 @@
+@font-face{
+    font-family: Pumpkin;
+    src: url(../assets/font/pumpkins.ttf);
+}
+
 body{
     margin: 0;
+    background-color: #f5f5f0;
 }
 
 nav{
     height: 70px;
     width: 100%;
     background-color: #001064;
-    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 11;
 }
 
 nav img{
@@ -20,5 +28,19 @@ nav ul{
     position: relative;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
+#juliana-index{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1{
+    margin-top: 30px;
+    font-family: Pumpkin;
+    text-transform: uppercase;
+    font-size: 56px;
+}
