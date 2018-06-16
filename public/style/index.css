@@ -1,16 +1,19 @@
-@font-face{
-    font-family: SugarpunchDemo;
-    src: url(../assets/font/SugarpunchDemo.otf);
-}
-
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @font-face{
     font-family: KGInimitable;
     src: url(../assets/font/KGInimitableOriginal.ttf);
 }
 
+@font-face{
+    font-family: Lato;
+    src: url(../assets/font/Lato-Regular.ttf);
+
+}
+
 body{
     margin: 0;
     background-color: #dfdfdf;
+    font-family: Lato, sans-serif; 
 }
 
 nav{
@@ -20,6 +23,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
+    box-shadow: 0px 3px 5px 0px rgba(117,117,117,1);
 }
 
 nav img{
@@ -42,19 +46,18 @@ nav ul{
     justify-content: center;
 }
 
-
 h1{
     margin-top: 80px;
-    /*font-family: SugarpunchDemo;*/
     font-family: KGInimitable;
     text-transform: uppercase;
-    font-size: 56px;
+    font-size: 38px;
     margin-bottom: 0;
+    margin-left: 130px;
     padding-bottom: 0;
     justify-content: center;
     display: flex;
 }
 
-p{
-    font-family: Georgia;
+#navegue{
+    margin-left: 30px;    
 }
