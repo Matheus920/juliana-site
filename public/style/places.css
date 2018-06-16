@@ -63,6 +63,10 @@
     bottom: 0;
 }
 
+.localization p:nth-of-type(2){
+    font-weight: bold;
+}
+
 .localization{
     position: fixed;
     width: 250px;
@@ -73,7 +77,6 @@
     flex-direction: column;
     text-align: center;
 }
-
 
 #julianapequena{
     width: 100%;
@@ -106,5 +109,14 @@
         width: 100%;
         margin: 0 auto;
     }
+}
 
+@media screen and (max-width: 938px){
+    .bio{
+        display: none;
+    }
+
+    .localization{
+        display: none;
+    }
 }

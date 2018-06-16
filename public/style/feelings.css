@@ -1,8 +1,8 @@
 .img-sentimentos{
-	max-width: 60%;
+	max-width: 70%;
 	min-width: 90px;
 	box-shadow: 15px 7px 5px grey;
-	border-radius: 5px 5px;
+	border-radius: 7px 8px;
 }
 
 td, td p{
@@ -11,7 +11,7 @@ td, td p{
 }
 
 table{
-	max-width: 70%;
+	max-width: 60%;
 	min-width: 200px;
 	margin-top: 30px;
 }
@@ -22,6 +22,11 @@ table{
 
 @media screen and (max-width: 596px){
 	.img-sentimentos:hover{
+		margin-right: 20px;
+	}
+
+	table{
+		max-width: 50%;
 		margin-right: 25px;
 	}
 }
