@@ -110,6 +110,10 @@
     .mapContainer{
         height: 500px;
     }
+    
+    .lugar{
+        margin-bottom: 130px;
+    }
 
     .definitions{
         width: 100%;
