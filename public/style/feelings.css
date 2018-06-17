@@ -5,12 +5,12 @@
 	border-radius: 7px 8px;
 }
 
-td, td p{
+#table-feelings td, #table-feelings td p{
 	text-align: center;
 	font: status-bar;
 }
 
-table{
+#table-feelings{
 	max-width: 60%;
 	min-width: 200px;
 	margin-top: 30px;

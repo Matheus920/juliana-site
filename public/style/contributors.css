@@ -1,0 +1,19 @@
+.localization p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.bio{
+    margin-top: 0;
+}
+
+#contributors{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: row;
+}
+
+.img-contributors{
+    display: flex;
+    
+}
