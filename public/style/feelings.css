@@ -1,32 +1,7 @@
-.img-sentimentos{
-	max-width: 70%;
-	min-width: 90px;
-	box-shadow: 7px 0px 11px 2px rgba(173,168,173,1);
-	border-radius: 7px 8px;
+.quadrado-legenda{
+	background-color: rgba(0,0,0,0.6);
 }
 
-#table-feelings td, #table-feelings td p{
-	text-align: center;
-	font: status-bar;
-}
-
-#table-feelings{
-	max-width: 60%;
-	min-width: 200px;
-	margin-top: 30px;
-}
-
-.img-sentimentos:hover{
-	transform: scale(1.2);
-}
-
-@media screen and (max-width: 596px){
-	.img-sentimentos:hover{
-		margin-right: 20px;
-	}
-
-	table{
-		max-width: 50%;
-		margin-right: 25px;
-	}
+.img-feelings{
+	filter: grayscale(100%);
 }

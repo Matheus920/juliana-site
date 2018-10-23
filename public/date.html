@@ -26,9 +26,10 @@
     <aside>
         <div class="bio">
             <img src="assets/img/ju_bio.jpg" alt="Juliana com uma pá" id="bioimg" title="Imagem de Juliana segurando uma pá">
-            <p> Juliana é uma estudante do Ensino Médio integrado ao Técnico em Informática do IFSP. Tem 16 anos e gosta muito
+            <p> Juliana é uma estudante do Ensino Médio integrado ao Técnico em Informática do IFSP. Tem 17 anos e
+                gosta muito
                 de sua cachorra, Boo.</p>
-            <p>Este trabalho foi realizado para o 2º bimestre da disciplina Aplicações para Web 1.</p>
+            <p>Este trabalho foi realizado para o 4º bimestre da disciplina Aplicações para Web 1.</p>
             <p>Desenvolvido por: Juliana Hipólito e Matheus Moreira.</p>
         </div>
     </aside>
@@ -41,8 +42,8 @@
                 id="julianapequena" usemap="juliana_navigation">
 
             <map name="juliana_navigation">
-                <area alt="Imagem pequena de Juliana clicável - Coração" title="Clique aqui para ir para a página de sentimentos" href="feelings.html"
-                    coords="95,100,150,160" shape="rect">
+                <area alt="Imagem pequena de Juliana clicável - Coração" title="Clique aqui para ir para a página de sentimentos"
+                    href="feelings.html" coords="95,100,150,160" shape="rect">
                 <area shape="rect" alt="Imagem pequena de Juliana clicável - Perna direita" title="Clique aqui para ir para a página de lugares"
                     coords="90, 220, 120, 280" href="places.html">
                 <area shape="rect" alt="Imagem pequena de Juliana clicável - Perna esquerda" title="Clique aqui para ir para a página de lugares"
@@ -52,46 +53,57 @@
             </map>
     </aside>
 
-    <section class="conteudo-centralizado">
-        <h1 class="titulo-abaixar">Marque um Encontro com Juliana</h1>
+    <section>
+        <div class="container">
+            <div class="row mt-3 justify-content-center">
+                <h1 class="titulo-abaixar">Marque um Encontro com Juliana</h1>
+            </div>
 
-        <form>
-            <div id="form-center">
-                <p>
-                    <label for="nome-id">Nome:</label>
-                    <input id="nome-id" name="nome" type="text" required>
-                </p>
+            <div class="row justify-content-center">
+                <form>
+                    <div class="form-group row">
+                        <label for="nome-id" class="col-sm-2 col-form-label">Nome:</label>
+                        <div class="col-sm-10">
+                            <input id="nome-id" class="form-control" placeholder="Nome" name="nome" type="text"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="idade-id" class="col-sm-2 col-form-label">Idade:</label>
+                        <div class="col-sm-10">
+                            <input id="idade-id" class="form-control" placeholder="Idade" name="idade" type="number"
+                                min=16 max=18 required>
+                        </div>
+                    </div>
 
-                <p>
-                    <label for="idade-id">Idade:</label>
-                    <input id="idade-id" name="idade" type="number" min=16 max=18 style="width: 175px">
-                </p>
+                    <p>
+                        <label for="sexo-id">Sexo:</label>
+                        <select id="sexo-id" style="width: 179px;">
+                            <option required value="" selected disabled>Selecione</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </p>
 
-                <p>
-                    <label for="sexo-id">Sexo:</label>
-                    <select id="sexo-id" style="width: 179px;">
-                        <option required value="" selected disabled>Selecione</option>
-                        <option value="feminino">Feminino</option>
-                    </select>
-                </p>
+                    <p>
+                        <label for="mensagem-id">Mensagem:</label>
+                        <textarea id="mensagem-id" name="mensagem" style="width: 175px;"></textarea>
+                    </p>
 
-                <p>
-                    <label for="mensagem-id">Mensagem:</label>
-                    <textarea id="mensagem-id" name="mensagem" style="width: 175px;"></textarea>
-                </p>
+                    <p>
+                        <label for="data-id">Data:</label>
+                        <input id="data-id" name="data" type="date" style="width: 175px">
+                    </p>
 
-                <p>
-                    <label for="data-id">Data:</label>
-                    <input id="data-id" name="data" type="date" style="width: 175px">
-                </p>
-
-                <div id="center-buttons">
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Enviar">
-                </div>
+                    <div id="center-buttons">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar">
+                    </div>
 
             </div>
-        </form>
+            </form>
+        </div>
+        </div>
+
     </section>
 
 </body>
