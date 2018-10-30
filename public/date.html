@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/app.css" type="text/css">
     <link rel="shortcut icon" href="assets/img/truck.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <title>Cintura | Encontro</title>
 </head>
 
@@ -59,51 +61,78 @@
                 <h1 class="titulo-abaixar">Marque um Encontro com Juliana</h1>
             </div>
 
-            <div class="row justify-content-center">
-                <form>
-                    <div class="form-group row">
-                        <label for="nome-id" class="col-sm-2 col-form-label">Nome:</label>
-                        <div class="col-sm-10">
-                            <input id="nome-id" class="form-control" placeholder="Nome" name="nome" type="text"
-                                required>
+            <div>
+                <div class="row justify-content-center">
+                    <form>
+                        <div class="form-group row">
+                            <label for="nome-id" class="col-sm-2 col-form-label">Nome:</label>
+                            <div class="col-sm-10">
+                                <input id="nome-id" class="form-control" placeholder="Nome" name="nome" type="text"
+                                    required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="idade-id" class="col-sm-2 col-form-label">Idade:</label>
-                        <div class="col-sm-10">
-                            <input id="idade-id" class="form-control" placeholder="Idade" name="idade" type="number"
-                                min=16 max=18 required>
+                        <div class="form-group row">
+                            <label for="idade-id" class="col-sm-2 col-form-label">Idade:</label>
+                            <div class="col-sm-10">
+                                <input id="idade-id" class="form-control" placeholder="Idade" name="idade" type="number"
+                                    min=16 max=18 required>
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group row">
+                            <label for="sexo-id" class="col-sm-2 col-form-label">Sexo:</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="sexo-id">
+                                    <option required value="" selected disabled>Selecione</option>
+                                    <option value="feminino">Feminino</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="data-id" class="col-sm-2 col-form-label">Data:</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="data-id" name="data" type="date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="mensagem-id" class="col-sm-2 col-form-label">Mensagem:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="mensagem-id" name="mensagem"></textarea>
+                            </div>
+                        </div>
 
-                    <p>
-                        <label for="sexo-id">Sexo:</label>
-                        <select id="sexo-id" style="width: 179px;">
-                            <option required value="" selected disabled>Selecione</option>
-                            <option value="feminino">Feminino</option>
-                        </select>
-                    </p>
+                        <script src="script/date.js"></script>
 
-                    <p>
-                        <label for="mensagem-id">Mensagem:</label>
-                        <textarea id="mensagem-id" name="mensagem" style="width: 175px;"></textarea>
-                    </p>
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Lugar para onde vocês irão</legend>
+                            <div class="form-group row">
+                                <label for="cep-id" class="col-sm-2 col-form-label">CEP:</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="cep-id" name="cep" type="text" onblur="pesquisacep(this.value);">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="endereco-id" class="col-sm-2 col-form-label">Endereço:</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="endereco-id" name="endereco" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="numero-endereco-id" class="col-sm-2 col-form-label">Número:</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="numero-endereco-id" name="numero-endereco" type="number">
+                                </div>
+                            </div>
+                        </fieldset>
 
-                    <p>
-                        <label for="data-id">Data:</label>
-                        <input id="data-id" name="data" type="date" style="width: 175px">
-                    </p>
+                        <div id="center-buttons">
+                            <button type="reset" class="btn btn-primary">Limpar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
 
-                    <div id="center-buttons">
-                        <input type="reset" value="Limpar">
-                        <input type="submit" value="Enviar">
-                    </div>
-
+                </div>
+                </form>
             </div>
-            </form>
         </div>
-        </div>
-
     </section>
 
 </body>
