@@ -1,4 +1,4 @@
-function limpa_formulário_cep() {
+/*function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('endereco-id').value = ("");
 }
@@ -52,13 +52,15 @@ function pesquisacep(valor) {
         //cep sem valor, limpa formulário.
         limpa_formulário_cep();
     }
-};
+};*/
 
-/*$(document).ready(function() {
+$(document).ready(function() {
 
     function limpa_formulário_cep() {
-        // Limpa valores do formulário de cep.
+        //Limpa valores do formulário de cep.
         $("#endereco-id").val("");
+        $("#cidade-id").val("");
+        $('#bairro-id').val("");
     }
     
     //Quando o campo cep perde o foco.
@@ -77,14 +79,18 @@ function pesquisacep(valor) {
             if(validacep.test(cep)) {
 
                 //Preenche os campos com "..." enquanto consulta webservice.
-                $("#endereco-id").val("");
+                $("#endereco-id").val("...");
+                $("#cidade-id").val("...");
+                $('#bairro-id').val('...');
 
                 //Consulta o webservice viacep.com.br/
                 $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
 
                     if (!("erro" in dados)) {
                         //Atualiza os campos com os valores da consulta.
-                        $("#endereco-id").val("");
+                        $("#endereco-id").val(dados.logradouro);
+                        $("#cidade-id").val(dados.localidade);
+                        $('#bairro-id').val(dados.bairro);
                     } //end if.
                     else {
                         //CEP pesquisado não foi encontrado.
@@ -104,4 +110,4 @@ function pesquisacep(valor) {
             limpa_formulário_cep();
         }
     });
-});*/
+});
