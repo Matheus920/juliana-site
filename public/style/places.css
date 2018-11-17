@@ -42,7 +42,7 @@
 
 .bio p:nth-of-type(3){
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
 }
 
 .localization p:nth-of-type(2){
@@ -72,7 +72,7 @@
     object-fit: cover;
     margin: 0 auto;
     margin-top: 35px;
-    margin-bottom: 71px;
+    margin-bottom: 35px;
 }
 
 @media screen and (max-width: 596px){
