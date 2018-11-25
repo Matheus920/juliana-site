@@ -1,0 +1,12 @@
+.video-fluid{
+    width: 60%;
+    height: 100%;
+}
+
+#veja{
+    text-transform: uppercase;
+}
+
+.legenda{
+    font-weight: bold;
+}
